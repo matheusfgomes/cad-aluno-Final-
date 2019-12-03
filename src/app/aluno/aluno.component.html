@@ -1,0 +1,42 @@
+<div id="container">
+    <div class="row">
+        <div class="column-3 column label">
+            <label for="txtMatricula">Matricula</label>
+        </div>
+        <div class="column-9 column input">
+            <input type="text" id="txtMatricula" #matricula />
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-3 column label">
+            <label for="txtNome">Nome</label>
+        </div>
+        <div class="column-9 column input">
+            <input type="text" id="txtNome" #nome />
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-3 column label">
+            <label for="txtCurso">Curso</label>
+        </div>
+        <div class="column-9 column input">
+            <input type="text" id="txtCurso" #curso />
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-3 column label">
+            <label for="txtEmail">E-mail</label>
+        </div>
+        <div class="column-9 column input">
+            <input type="email" id="txtEmail" #email />
+        </div>
+    </div>
+    <div id="btnAlign">
+      <button (click)="salvar(matricula.value, nome.value, curso.value, email.value); matricula.value=''; nome.value=''; curso.value=''; email.value=''">
+        Salvar
+      </button>
+    </div>
+
+</div>
+
+  
